@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors</title>
+    <!-- google font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap min css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- jquery UI css -->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- custom style css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/self_style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+</head>
+<body class="earth-bg">
+    <div class="page">
+        <!-- header -->
+        <header class="header d-flex px-3 align-items-center">
+            <div class="logo"><a href="login.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="ml-auto">
+                <ul class="right-menu list-unstyled">
+                    <li class="dropdown"></li>
+                    <li class="move"></li>
+                    <li class="logout"></li>
+                    <li class="hamberger"></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="page-main">
+            <!-- app sidebar -->
+            <div class="app-sidebar">
+                <div class="up-header d-flex justify-content-between align-items-center">
+                    <h3>Underwriter Portal</h3>
+                    <button class="side-menu-toggle">toggle</button>
+                </div>
+                <!-- side nagigation -->
+                <div class="side-menu">
+                    <div class="scroll-height">
+                        <ul id="sideNavigation" class="navigation">
+                            <li><a href="index.html" class="mytasks">My Tasks</a></li>
+                            <li><a href="customer.html" class="customer">Customer</a></li>
+                            <li><a href="" class="quotesBusiness">My Policies</a>
+                                <ul style="display: block;">
+                                    <li><a href="transationsearch.html" class="transactionSearch active">Transaction Search</a></li>
+                                    <li><a href="newquote.html" class="newQuote">New Quote</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="policyServicing">My Claims</a>
+                                <ul>
+                                    <li><a href="#" class="lodgement">Lodgement</a></li>
+                                    <li><a href="claim_search.html" class="claimSearch">Claim Search</a></li>
+                                    <li><a href="#" class="myReminders">My Reminders</a></li>
+                                    <li><a href="#" class="manageProviders">Manage Providers</a></li>
+                                    <li><a href="#" class="manageRecoveries">Manage Recoveries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="cashModule">Cash Module</a></li>
+                            <li><a href="" class="accounts">Accounts</a></li>
+                            <li><a href="" class="managementReports">Management Reports</a>
+                                <ul>
+                                    <li><a href="available_reports.html" class="availableReport">Available Report</a></li>
+                                    <li><a href="report_que.html" class="reportQueue">Report Queue</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="administration">Administration</a>
+                                <ul>
+                                    <li><a href="user_management.html" class="userManagement">User Management</a></li>
+                                    <li><a href="product_rules.html" class="productRules">Product Rules</a></li>
+                                    <li><a href="intermediary_management.html" class="intermediaryManagement">Intermediary Management</a></li>
+                                    <li><a href="ticker_management.html" class="tickerManagement">Ticker Management</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ens side navigation -->
+            </div>
+            <!-- end app sidebar -->
+            <div class="app-content">
+                <!-- breadcrumb menu -->
+                <div class="page_header">
+                    <ul class="breadcrumb">
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item">My Policies</li>
+                        <li class="item active">Transaction Search</li>
+                    </ul>
+                </div>
+                <!-- end breadcrumb menu -->
+                <!-- search form -->
+                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Transaction Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option disabled value="country">Select All</option>
+                                    <option value="India">Policy</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Customer Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Customer ID</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Channel/Intermediary</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">(Select All)</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Quote No</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Policy No</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Product Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Select All</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary by code</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">(Select All)</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Quote/From Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Quote/To Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Policy issue/From Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Policy issue/To Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Commencement Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Policy Expiry Date</div>
+                            <div class="datePickerElement">
+                                <input type="text" id="datepicker" size="30"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Created by</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Select All</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Quote/Policy Status</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">(Select All)</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Show Declined Quotes</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">(Select All)</option>
+                                    <option value="1">State 1</option>
+                                    <option value="2">State 2</option>
+                                    <option value="3">State 3</option>
+                                    <option value="4">State 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3  offset-md-6 mt-4 text-right">
+                           <input type="submit" value="Search" class="search-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+            <!-- data table -->
+            <div class="table_wrapper">
+
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Trans:Type<br>Quote No</th>
+                            <th scope="col">Product<br>Intermediary</th>
+                            <th scope="col">Customer<br>Policy No</th>
+                            <th scope="col">Quote Date</th>
+                            <th scope="col">Policy Issue Date</th>
+                            <th scope="col">Premium</th>
+                            <th scope="col">Policy<br>Period</th>
+                            <th scope="col" style="text-align: center;">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Task ID">NB </td>
+                            <td data-label="Description">GMI</td>
+                            <td data-label="Task">Kevin</td>
+                            <td data-label="Branch">jul 02. 2020 12:25</td>
+                            <td data-label="Branch">jul 02. 2020 12:25</td>
+                            <td data-label="Intermnedia">0.00</td>
+                            <td data-label="Customer Customer ID">jul 2. 2020-jul 1. 2021</td>
+                            <td data-label="Portfolio Product" style="text-align: center;">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#myModal"><span class="fa fa-envelope edit-icon"></span></button>
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#myModal"><span class="fa fa-print edit-icon"></span></button>
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#myModal"><span class="fa fa-edit edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <!-- end data table -->
+            <!-- data table footer -->
+            <div class="table-footer">
+                <div class="show-page">Showing 10 of 100 entries</div>
+                <div class="">
+                    <ul class="pagination">
+                        <li class=""><a class="first" href="#"></a></li>
+                        <li class=""><a class="prev" href="#"></a></li>
+                        <li class="active"><span>1</span></li>
+                        <li class=""><a class="" href="#">2</a></li>
+                        <li class=""><a class="" href="#">3</a></li>
+                        <li class=""><a class="" href="#">4</a></li>
+                        <li class=""><a class="" href="#">5</a></li>
+                        <li class=""><a class="next" href="#"></a></li>
+                        <li class=""><a class="last" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end data table footer -->
+           </div>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <footer>
+            <p class="text-center poweredby">Powered by Yoors © 2020 </p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Enter Email Address</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input">
+                               <input type="text" placeholder="email address 1">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input">
+                               <input type="text" placeholder="email address 2">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input">
+                               <input type="text" placeholder="email address 3">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input">
+                               <input type="text" placeholder="email address 4">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-input">
+                               <input type="text" placeholder="email address 5">
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="search-btn">Send</button>
+                  <button type="button" class="search-btn" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+      <!-- jquery -->
+      <!-- jquery min -->
+      <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- selectStyle jquery -->
+      <script src="js/selectStyle.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <!-- jquery.ui.core.js -->
+      <script src="js/jquery.ui.core.js"></script>
+      <!-- jquery.ui.datepicker -->
+      <script src="js/jquery.ui.datepicker.js"></script>
+      <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+        $( "#format" ).change(function() {
+          $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+        });
+      });
+      </script>
+    </html>

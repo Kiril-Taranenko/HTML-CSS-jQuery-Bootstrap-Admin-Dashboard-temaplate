@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors</title>
+    <!-- google font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap min css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <!-- bootstrap-datetimepicker.min.css -->
+    <link rel='stylesheet' href='css/bootstrap-datetimepicker.min.css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/self_style.css">
+
+  
+</head>
+<body class="earth-bg">
+    <div class="page">
+        <!-- header -->
+        <header class="header d-flex px-3 align-items-center">
+            <div class="logo"><a href="login.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="ml-auto">
+                <ul class="right-menu list-unstyled">
+                    <li class="dropdown"></li>
+                    <li class="move"></li>
+                    <li class="logout"></li>
+                    <li class="hamberger"></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="page-main">
+            <!-- app sidebar -->
+            <div class="app-sidebar">
+                <div class="up-header d-flex justify-content-between align-items-center">
+                    <h3>Underwriter Portal</h3>
+                    <button class="side-menu-toggle">toggle</button>
+                </div>
+                <!-- side nagigation -->
+                <div class="side-menu">
+                    <div class="scroll-height">
+                        <ul id="sideNavigation" class="navigation">
+                            <li><a href="index.html" class="mytasks">My Tasks</a></li>
+                            <li><a href="customer.html" class="customer">Customer</a></li>
+                            <li><a href="" class="quotesBusiness">My Policies</a>
+                                <ul>
+                                    <li><a href="transationsearch.html" class="transactionSearch">Transaction Search</a></li>
+                                    <li><a href="newquote.html" class="newQuote">New Quote</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="policyServicing">My Claims</a>
+                                <ul>
+                                    <li><a href="#" class="lodgement">Lodgement</a></li>
+                                    <li><a href="claim_search.html" class="claimSearch">Claim Search</a></li>
+                                    <li><a href="#" class="myReminders">My Reminders</a></li>
+                                    <li><a href="#" class="manageProviders">Manage Providers</a></li>
+                                    <li><a href="#" class="manageRecoveries">Manage Recoveries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="cashModule">Cash Module</a></li>
+                            <li><a href="" class="accounts">Accounts</a></li>
+                            <li><a href="" class="managementReports">Management Reports</a>
+                                <ul>
+                                    <li><a href="available_reports.html" class="availableReport">Available Report</a></li>
+                                    <li><a href="report_que.html" class="reportQueue">Report Queue</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="administration">Administration</a>
+                                <ul style="display: block;">
+                                    <li><a href="user_management.html" class="userManagement">User Management</a></li>
+                                    <li><a href="product_rules.html" class="productRules">Product Rules</a></li>
+                                    <li><a href="intermediary_management.html" class="intermediaryManagement active">Intermediary Management</a></li>
+                                    <li><a href="ticker_management.html" class="tickerManagement">Ticker Management</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ens side navigation -->
+            </div>
+            <!-- end app sidebar -->
+            <div class="app-content">
+                <!-- breadcrumb menu -->
+                <div class="page_header">
+                    <ul class="breadcrumb">
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item">Administration</li>
+                        <li class="item active">Intermediary Management</li>
+                    </ul>
+                </div>
+                <!-- end breadcrumb menu -->
+                <!-- search form -->
+                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary ID</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary Name</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Category</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option disabled>(Select All)</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Channel type</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Select All</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Company Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Organization</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Contact Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Agent</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">GST Register No.</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Register No</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Register Name</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Status</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option >(Select All)</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 mt-4 text-right">
+                           <input type="submit" value="Search" class="search-btn">
+                        </div>
+                        <div class="col-md-3 mt-4 text-right">
+                           <input type="submit" value="Create" class="search-btn" data-toggle="modal" data-target="#newinterModal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+            <!-- data table -->
+            <div class="table_wrapper">
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Intermediary ID</th>
+                            <th scope="col">Intermediary Name</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Channel<br>type</th>
+                            <th scope="col">Company<br>Type</th>
+                            <th scope="col">Contact<br>Type</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">View</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Description">1</td>
+                            <td data-label="Task">BA</td>
+                            <td data-label="Branch">BK</td>
+                            <td data-label="Intermnedia">B2B</td>
+                            <td data-label="Customer Customer ID">Individual</td>
+                            <td data-label="Portfolio Product">Direct</td>
+                            <td data-label="Assigned to Assigned group">A</td>
+                            <td data-label="Create date">
+                                <button class="btn default" style="padding:0 3px 0 3px" data-toggle="modal" data-target="#editinterModal"><span class="fa fa-eye edit-icon"></span></button>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <!-- end data table -->
+            <!-- data table footer -->
+            <div class="table-footer">
+                <div class="show-page">Showing 10 of 100 entries</div>
+                <div class="">
+                    <ul class="pagination">
+                        <li class=""><a class="first" href="#"></a></li>
+                        <li class=""><a class="prev" href="#"></a></li>
+                        <li class="active"><span>1</span></li>
+                        <li class=""><a class="" href="#">2</a></li>
+                        <li class=""><a class="" href="#">3</a></li>
+                        <li class=""><a class="" href="#">4</a></li>
+                        <li class=""><a class="" href="#">5</a></li>
+                        <li class=""><a class="next" href="#"></a></li>
+                        <li class=""><a class="last" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end data table footer -->
+           </div>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <footer>
+            <p class="text-center poweredby">Powered by Yoors © 2020 </p>
+        </footer>
+        <!-- end footer -->
+
+
+        <div class="modal fade" id="newinterModal">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Create New Intermediary</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary ID</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Category</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Select</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Channel Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Select</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Company Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Select</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Parent Intermediary</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>None</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Organization Level</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Email</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Fax</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Mobile</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Phone</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Postal Code</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 1</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 2</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 3</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 4</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address type</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Paid up Capital</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Number</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Date</div>
+                            <div class="input-group datePickerElement" id="datepicker">
+                                <input type="text" class="" placeholder="MM/DD/YYYY"/><span class="input-group-append input-group-addon"><span class="input-group-text date">date</span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">GST Reg.Number</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Status</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Select</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row col-md-12 mt-4">
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check1">
+                            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something">Accident Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Travel Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Small Business Insurance
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Corporate Travel Online
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">ERGO BizProtect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Moter Coporate Vehicle
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Motor Private Vehicle
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Demo Travel Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Renovation Package
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Yoors Travel Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Small Business Insurance
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Motor Private Vehicle
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Yoors Life Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">FNOL WICA Claims
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Pru Health
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">Accident Protect FMW
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">PHA Group Medical Insurance
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">PHA Digicel
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">PHA Travel Protect
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">PHA Motor Private Vehicle
+                          </label>
+                        </div>
+                        <div class="form-check-inline col-md-3">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something">PHA Individual Medical Insurance
+                          </label>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <button type="button" class="search-btn">Submit</button>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button type="button" class="search-btn" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="editinterModal">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Create New Intermediary</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary ID</div>
+                            <div class="form-input">
+                               <input type="text" value="A000016" readonly>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Intermediary Name</div>
+                            <div class="form-input">
+                               <input type="text" value="alliance integrated solutions pte ltd">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Category</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Oganization</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Channel Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>B2B2C</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Company Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Oganization</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Contact Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Agent</option>
+                                    <option>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Email</div>
+                            <div class="form-input">
+                               <input type="text" value="kevin@test.com">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Fax</div>
+                            <div class="form-input">
+                               <input type="text" value="63540985">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Mobile</div>
+                            <div class="form-input">
+                               <input type="text" value="63539014">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Phone</div>
+                            <div class="form-input">
+                               <input type="text" value="63539014">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Postal Code</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 1</div>
+                            <div class="form-input">
+                               <input type="text" value="28 sin ming lane">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 2</div>
+                            <div class="form-input">
+                               <input type="text" value="#04-144 midview city">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 3</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address 4</div>
+                            <div class="form-input">
+                               <input type="text" value="SG">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Address type</div>
+                            <div class="form-input">
+                               <input type="text" value="Y">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Paid up Capital</div>
+                            <div class="form-input">
+                               <input type="text" value="0">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Name</div>
+                            <div class="form-input">
+                               <input type="text" value="alliance">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Number</div>
+                            <div class="form-input">
+                               <input type="text" value="200510896K">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Reg.Date</div>
+                            <div class="input-group datePickerElement" id="datepicker">
+                                <input type="text" class="" placeholder="MM/DD/YYYY"/><span class="input-group-append input-group-addon"><span class="input-group-text date">date</span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">GST Reg.Number</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Status</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option selected>Active</option>
+                                    <option >Lorem Ipsum</option>
+                                    <option>Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Created By</div>
+                            <div class="form-input">
+                               <input type="text" value="SYSTEM" readonly>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Created Date</div>
+                            <div class="form-input">
+                               <input type="text" value="Feb 26, 2018 9:32:59 AM" readonly>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Updated By</div>
+                            <div class="form-input">
+                               <input type="text" value="SYSTEM" readonly>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Updated Time</div>
+                            <div class="form-input">
+                               <input type="text" value="Feb 26, 2018 9:32:59 AM" readonly>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <button type="button" class="search-btn">Update</button>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button type="button" class="search-btn" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+      <!-- jquery -->
+      <!-- jquery min -->
+      <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- selectStyle jquery -->
+      <script src="js/selectStyle.js"></script>
+      <!-- moment.min.js -->
+      <script src='js/moment.min.js'></script>
+      <!-- bootstrap-datetimepicker.min.js -->
+      <script src='js/bootstrap-datetimepicker.min.js'></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+
+      <script id="rendered-js" >
+        if (/Mobi/.test(navigator.userAgent)) {
+          // if mobile device, use native pickers
+          $(".date input").attr("type", "date");
+          $(".time input").attr("type", "time");
+        } else {
+          // if desktop device, use DateTimePicker
+          $("#datepicker").datetimepicker({
+            useCurrent: true,
+            format: "L",
+            showTodayButton: true,
+            icons: {
+              next: "fa fa-chevron-right",
+              previous: "fa fa-chevron-left",
+              today: 'todayText' } });
+        
+        
+          $("#timepicker").datetimepicker({
+            format: "LT",
+            icons: {
+              up: "fa fa-chevron-up",
+              down: "fa fa-chevron-down" } });
+        
+        
+        }
+        </script>
+</html>

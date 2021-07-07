@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors login</title>
+    <!-- google font API -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- bootstrap min css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- custom style css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript">
+    function gotoHome(){
+      location.href='index.html'
+    }
+  </script>
+</head>
+<body class="earth-bg">
+        <div class="login-wrapper py-4">
+                <div class="loginText">
+                    <div class="logo-login mb-2">
+                        <a href="index.html"><img src="images/logo-login.png" alt="logo"></a>
+                    </div>
+                    <h4>Underwriter Portal</h4>
+                    <div class="insurance-img text-center">
+                        <img src="images/insurance-img.png" alt="insurance" class="img-fluid">
+                    </div>
+                </div>
+                <div class="LoginForm">
+                    <h3 class="form-title mb-3">Sign in</h3>
+                    <p class="hello-text text-center">Hello, Please sign in to continue to your account</p>
+                    <div class="fieldContainer">
+                        <span class="username mb-4"><input type="text" placeholder="User name"></span>
+                        <span class="password"><input type="text" placeholder="Password"></span>
+                        <a href="#" class="forgot-password mt-4 mb-4">Forgot password</a>
+                        <button class="submit_btn" onclick="gotoHome()">Next</button>
+                        <div class="form-footer mt-4">
+                            <a href="">Terms & Conditions</a>|<a href="">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</body>
+      <!-- jquery -->
+      <!-- jquery min -->
+      <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- selectStyle jquery -->
+      <script src="js/selectStyle.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+</html>

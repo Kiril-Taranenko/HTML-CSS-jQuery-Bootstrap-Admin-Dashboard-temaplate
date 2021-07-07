@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors</title>
+    <!-- google font API -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<!-- bootstrap min css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- custom style css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="earth-bg">
+    <div class="page">
+        <!-- header -->
+        <header class="header d-flex px-3 align-items-center">
+            <div class="logo"><a href="login.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="ml-auto">
+                <ul class="right-menu list-unstyled">
+                    <li class="dropdown"></li>
+                    <li class="move"></li>
+                    <li class="logout"></li>
+                    <li class="hamberger"></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="page-main">
+            <!-- app sidebar -->
+            <div class="app-sidebar">
+                <div class="up-header d-flex justify-content-between align-items-center">
+                    <h3>Underwriter Portal</h3>
+                    <button class="side-menu-toggle">toggle</button>
+                </div>
+                <!-- side nagigation -->
+                <div class="side-menu">
+                    <div class="scroll-height">
+                        <ul id="sideNavigation" class="navigation">
+                            <li><a href="index.html" class="mytasks">My Tasks</a></li>
+                            <li><a href="customer.html" class="customer">Customer</a></li>
+                            <li><a href="" class="quotesBusiness">My Policies</a>
+                                <ul style="display: block;">
+                                    <li><a href="transationsearch.html" class="transactionSearch">Transaction Search</a></li>
+                                    <li><a href="newquote.html" class="newQuote active">New Quote</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="policyServicing">My Claims</a>
+                                <ul>
+                                    <li><a href="#" class="lodgement">Lodgement</a></li>
+                                    <li><a href="claim_search.html" class="claimSearch">Claim Search</a></li>
+                                    <li><a href="#" class="myReminders">My Reminders</a></li>
+                                    <li><a href="#" class="manageProviders">Manage Providers</a></li>
+                                    <li><a href="#" class="manageRecoveries">Manage Recoveries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="cashModule">Cash Module</a></li>
+                            <li><a href="" class="accounts">Accounts</a></li>
+                            <li><a href="" class="managementReports">Management Reports</a>
+                                <ul>
+                                    <li><a href="available_reports.html" class="availableReport">Available Report</a></li>
+                                    <li><a href="report_que.html" class="reportQueue">Report Queue</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="administration">Administration</a>
+                                <ul>
+                                    <li><a href="user_management.html" class="userManagement">User Management</a></li>
+                                    <li><a href="product_rules.html" class="productRules">Product Rules</a></li>
+                                    <li><a href="intermediary_management.html" class="intermediaryManagement">Intermediary Management</a></li>
+                                    <li><a href="ticker_management.html" class="tickerManagement">Ticker Management</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ens side navigation -->
+            </div>
+            <!-- end app sidebar -->
+            <div class="app-content">
+                <!-- breadcrumb menu -->
+                <div class="page_header">
+                    <ul class="breadcrumb">
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item active">My Policies</li>
+                        <li class="item active">New Quote</li>
+                    </ul>
+                </div>
+                <!-- end breadcrumb menu -->
+                <!-- search form -->
+                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3">
+                             <div class="form-input">
+                               <input type="text" placeholder="search customer">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                           <input type="submit" value="Search" class="search-btn" data-toggle="modal" data-target="#myModal">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Customer Type</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">company</option>
+                                    <option value="1">personal</option>
+                                    <option value="2">member</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Phone</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Contact Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Contact Email</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Communication Method</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Email</option>
+                                    <option value="1">whatsapp</option>
+                                    <option value="2">Skype</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Bussiness Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Bussiness No</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Registration ID</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Contact Phone</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Registration Date</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3 ">
+                            <div class="selectBoxTitle">Address</div>
+                            <div class="">
+                               <input type="submit" value="Add New Address" class="template-btn"  data-toggle="modal" data-target="#newaddressModal">
+                           </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+
+                <!-- search form -->
+                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Product</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value=""></option>
+                                    <option value="1">PHA Group Medical Insurance</option>
+                                    <option value="2"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <div class="selectBoxTitle">Intermediary</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value=""></option>
+                                    <option value="1">ALLIANCE INTEGRATED SOLUTION</option>
+                                    <option value="2"></option>
+                                </select>
+                            </div>
+                        </div>
+                        
+
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12 mt-12 text-right">
+                           <input type="submit" value="Launch" class="search-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+           </div>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <footer>
+            <p class="text-center poweredby">Powered by Yoors © 2020 </p>
+        </footer>
+        <!-- end footer -->
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Enter Email Address</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="table_wrapper">
+
+                        <div class="table-scroll">
+                            <table class="data-table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">ID Number</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Contact</th>
+                                    <th scope="col">Select</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td data-label="Task ID">Kevin</td>
+                                    <td data-label="Description">S712232F</td>
+                                    <td data-label="Task">Kevin@test.com</td>
+                                    <td data-label="Branch">1234872</td>
+                                    <td data-label="Branch">
+                                        <img src="./images/svg/download-878.svg" style="height: 20px;">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Task ID">Kevin</td>
+                                    <td data-label="Description">S712232F</td>
+                                    <td data-label="Task">Kevin@test.com</td>
+                                    <td data-label="Branch">1234872</td>
+                                    <td data-label="Branch">
+                                        <img src="./images/svg/download-878.svg" style="height: 20px;">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td data-label="Task ID">Kevin</td>
+                                    <td data-label="Description">S712232F</td>
+                                    <td data-label="Task">Kevin@test.com</td>
+                                    <td data-label="Branch">1234872</td>
+                                    <td data-label="Branch">
+                                        <img src="./images/svg/download-878.svg" style="height: 20px;">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <!-- end data table -->
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="search-btn" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="newaddressModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Add Address</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Unit</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Street No and Name</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Suburb</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Post Code</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Statue</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="selectBoxTitle">Country</div>
+                            <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <button type="button" class="search-btn" data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button type="button" class="search-btn">Add+</button>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+      <!-- jquery -->
+      <!-- jquery min -->
+      <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- selectStyle jquery -->
+      <script src="js/selectStyle.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+</html>

@@ -1,0 +1,2023 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors</title>
+    <!-- google font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap min css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- jquery UI css -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+        <!-- custom style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/self_style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='css/bootstrap-datetimepicker.min.css'>
+
+    <style>
+        .table-responsive .customized-select {
+            position: static !important;
+        }
+
+        .table-responsive {
+            overflow-y: visible;
+        }
+    </style>
+  
+  
+</head>
+<body class="earth-bg">
+    <div class="page">
+        <!-- header -->
+        <header class="header d-flex px-3 align-items-center">
+            <div class="logo"><a href="login.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="ml-auto">
+                <ul class="right-menu list-unstyled">
+                    <li class="dropdown"></li>
+                    <li class="move"></li>
+                    <li class="logout"></li>
+                    <li class="hamberger"></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="page-main">
+            <!-- app sidebar -->
+            <div class="app-sidebar">
+                <div class="up-header d-flex justify-content-between align-items-center">
+                    <h3>Underwriter Portal</h3>
+                    <button class="side-menu-toggle">toggle</button>
+                </div>
+                <!-- side nagigation -->
+                <div class="side-menu">
+                    <div class="scroll-height">
+                        <ul id="sideNavigation" class="navigation">
+                            <li><a href="index.html" class="mytasks">My Tasks</a></li>
+                            <li><a href="customer.html" class="customer">Customer</a></li>
+                            <li><a href="" class="quotesBusiness">My Policies</a>
+                                <ul>
+                                    <li><a href="transationsearch.html" class="transactionSearch">Transaction Search</a></li>
+                                    <li><a href="newquote.html" class="newQuote">New Quote</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="policyServicing">My Claims</a>
+                                <ul style="display: block;">
+                                    <li><a href="#" class="lodgement">Lodgement</a></li>
+                                    <li><a href="claim_search.html" class="claimSearch active">Claim Search</a></li>
+                                    <li><a href="#" class="myReminders">My Reminders</a></li>
+                                    <li><a href="#" class="manageProviders">Manage Providers</a></li>
+                                    <li><a href="#" class="manageRecoveries">Manage Recoveries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="cashModule">Cash Module</a></li>
+                            <li><a href="" class="accounts">Accounts</a></li>
+                            <li><a href="" class="managementReports">Management Reports</a>
+                                <ul>
+                                    <li><a href="available_reports.html" class="availableReport">Available Report</a></li>
+                                    <li><a href="report_que.html" class="reportQueue">Report Queue</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="administration">Administration</a>
+                                <ul>
+                                    <li><a href="user_management.html" class="userManagement">User Management</a></li>
+                                    <li><a href="product_rules.html" class="productRules">Product Rules</a></li>
+                                    <li><a href="intermediary_management.html" class="intermediaryManagement">Intermediary Management</a></li>
+                                    <li><a href="ticker_management.html" class="tickerManagement">Ticker Management</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ens side navigation -->
+            </div>
+            <!-- end app sidebar -->
+            <div class="app-content">
+                <!-- breadcrumb menu -->
+                <div class="page_header">
+                    <ul class="breadcrumb">
+                        <li class="item">Home</li>
+                        <li class="item">My Claims</li>
+                        <li class="item active">Claim - Details</li>
+                    </ul>
+                </div>
+                <!-- end breadcrumb menu -->
+                <!-- search form -->
+                <div class="form-wrapper">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Insured</span></div>
+                                    <div class="col-md-7"><span class="claim-content">Mr John Smith</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Claim Type</span></div>
+                                    <div class="col-md-7"><span class="claim-content">Vehicle - Own Damage</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Risk Address</span></div>
+                                    <div class="col-md-7"><span class="claim-content">12 ABC street Sydney 2000</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Date of Loss</span></div>
+                                    <div class="col-md-7"><span class="claim-content">12th April 2020</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Incident Type</span></div>
+                                    <div class="col-md-7"><span class="claim-content">Accident</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Insured Address</span></div>
+                                    <div class="col-md-7"><span class="claim-content">12 ABC street Sydney 2000</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Policy No</span></div>
+                                    <div class="col-md-7"><span class="claim-content">123456</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Policy Period</span></div>
+                                    <div class="col-md-7"><span class="claim-content">12th April 2020 to 12 th April 2020</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Team</span></div>
+                                    <div class="col-md-7"><span class="claim-content">HO Sydney</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Sum Insured</span></div>
+                                    <div class="col-md-7"><span class="claim-content">123456</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Last Actioned</span></div>
+                                    <div class="col-md-7"><span class="claim-content">12th April 2020 16.30</span></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-5"><span class="claim-title">Case Manager</span></div>
+                                    <div class="col-md-7"><span class="claim-content">James Hardy</span></div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- end search form -->
+            <!-- data table -->
+            
+            <nav>
+                <div class="nav nav-tabs tab-backgroud" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-detail-tab" data-toggle="tab" href="#nav-detail" role="tab" aria-controls="nav-detail" aria-selected="true">Claim Details</a>
+                  <a class="nav-item nav-link" id="nav-activity-tab" data-toggle="tab" href="#nav-activity" role="tab" aria-controls="nav-activity" aria-selected="false">Activity</a>
+                  <a class="nav-item nav-link" id="nav-appointment-tab" data-toggle="tab" href="#nav-appointment" role="tab" aria-controls="nav-appointment" aria-selected="false">Appointments</a>
+                  <a class="nav-item nav-link" id="nav-case_notes-tab" data-toggle="tab" href="#nav-case_notes" role="tab" aria-controls="nav-case_notes" aria-selected="true">Case Notes</a>
+                  <a class="nav-item nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents" role="tab" aria-controls="nav-documents" aria-selected="false">Documents</a>
+                  <a class="nav-item nav-link" id="nav-reserves-tab" data-toggle="tab" href="#nav-reserves" role="tab" aria-controls="nav-reserves" aria-selected="false">Reserves</a>
+                  <a class="nav-item nav-link" id="nav-payment-tab" data-toggle="tab" href="#nav-payment" role="tab" aria-controls="nav-payment" aria-selected="true">Payments</a>
+                  <a class="nav-item nav-link" id="nav-related-tab" data-toggle="tab" href="#nav-related" role="tab" aria-controls="nav-related" aria-selected="false">Related Claims</a>
+                  <a class="nav-item nav-link" id="nav-policy-tab" data-toggle="tab" href="#nav-policy" role="tab" aria-controls="nav-policy" aria-selected="false">Policy Details</a>
+                </div>
+            </nav>
+            <div class="table_wrapper1">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade  show active" id="nav-detail" role="tabpanel" aria-labelledby="nav-detail-tab">
+                        <div class="container-fluid">
+                            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="col-sm-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <a class="normal-style">Particulars of Accident</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Date</span>
+                                            </div>
+                                            <div class="col-sm-4 middle-text-padding">
+                                                <div class="input-group datePickerElement" id="datepicker">
+                                                    <input type="text" class="" placeholder="MM/DD/YYYY"/><span class="input-group-append input-group-addon"><span class="input-group-text date">date</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-1 middle-text">
+                                                <span>Time</span>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="input-group timePickerElement" id="timepicker">
+                                                    <input type="text" class="" placeholder="HH:MM AM/PM"/><span class="input-group-append input-group-addon"><span class="input-group-text time">time</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Place of Accident</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Estimated Speed your vehicle at impact</span>
+                                            </div>
+                                            <div class="col-sm-4 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Estimated Speed your vehicle at impact</span>
+                                            </div>
+                                            <div class="col-sm-4 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Incident Type</span>
+                                            </div>
+                                            <div class="col-sm-4 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 10px;">
+                                            <div class="col-sm-3" style="font-size: 13px;">
+                                                <span >Accident Details</span>
+                                            </div>
+                                            <div class="col-md-9">
+                                                    <textarea class="form-control" type="text" style="height: 100px;"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-sm-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <a class="normal-style">Vehicle Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Vehicle Number</span>
+                                            </div>
+                                            <div class="col-sm-4 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Make</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Model</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <a class="normal-style">Driver Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >Name</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >DOB</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                    <div class="datePickerElement">
+                                                        <input type="text" id="dobdatepicker" size="30"/>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="row input-scales">
+                                            <div class="col-sm-3 middle-text">
+                                                <span >License</span>
+                                            </div>
+                                            <div class="col-sm-9 middle-text-padding">
+                                                <div class="form-input">
+                                                    <input type="text" placeholder="Enter text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="container">
+                                            <div class="row">
+                                                <a class="normal-style">Other Vehicle Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="table_wrapper1">
+                                            <div class="table-scroll">
+                                                <table class="data-table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">No</th>
+                                                        <th scope="col">Make</th>
+                                                        <th scope="col">Model </th>
+                                                        <th scope="col">Driver</th>
+                                                        <th scope="col"></th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                                        <td data-label="Description">Lorem Ipsum</td>
+                                                        <td data-label="Task">Lorem Ipsum</td>
+                                                        <td data-label="Branch">Lorem Ipsum</td>
+                                                        <td data-label="Portfolio Product">
+                                                            <a class="pull-right edit-icon" href="#"><span class="fa fa-edit"></span></a>
+                                                        </td>
+                                                      </tr>
+                                                      
+                                                      <tr>
+                                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                                        <td data-label="Description">Lorem Ipsum</td>
+                                                        <td data-label="Task">Lorem Ipsum</td>
+                                                        <td data-label="Branch">Lorem Ipsum</td>
+                                                        <td data-label="Portfolio Product">
+                                                            <a class="pull-right edit-icon" href="#"><span class="fa fa-edit"></span></a>
+                                                        </td>
+                                                      </tr>
+                                                      
+                                                      <tr>
+                                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                                        <td data-label="Description">Lorem Ipsum</td>
+                                                        <td data-label="Task">Lorem Ipsum</td>
+                                                        <td data-label="Branch">Lorem Ipsum</td>
+                                                        <td data-label="Portfolio Product">
+                                                            <a class="pull-right edit-icon" href="#"><span class="fa fa-edit"></span></a>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-activity" role="tabpanel" aria-labelledby="nav-activity-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="container-fluid">
+                                        <div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+                                            <a class="normal-style">Claim Items</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="table-responsive" style="border-radius:15px;">
+                                        <table class="table table-hover">
+                                            <thead style="background-color: #c7deca;">                                        
+                                            <tr class="tmpTr">
+                                                <th scope="col" >No</td>
+                                                <th scope="col" >Description</th>
+                                                <th scope="col" >Task</th>
+                                                <th scope="col" >Estimat</th>
+                                                <th scope="col" >Paid</th>
+                                                <th scope="col" >Settlement Method</th>
+                                                <th scope="col" >Created By</th>
+                                                <th scope="col" >Modified By</th>
+                                                <th scope="col" >Last Updated</th>
+                                                <th scope="col" >Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="container-fluid">
+                                        <div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+                                            <a class="normal-style">Activity</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="table-responsive" style="border-radius:15px;">
+                                        <table class="table table-hover">
+                                            <thead style="background-color: #c7deca;">                                        
+                                            <tr class="tmpTr">
+                                                <th scope="col" >No</td>
+                                                <th scope="col" >Loss Item</th>
+                                                <th scope="col" >Status</th>
+                                                <th scope="col" >Date</th>
+                                                <th scope="col" >Assigned</th>
+                                                <th scope="col" >View Report</th>
+                                                <th scope="col" >Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-appointment" role="tabpanel" aria-labelledby="nav-appointment-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="container-fluid">
+                                        <div class="row" style="margin-top: 20px; margin-bottom: 10px;">
+                                            <div class="pull-left">
+                                                <input type="submit" value="Make Appointment" class="search-btn" style="padding: 0 15px 0 15px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="table-responsive" style="border-radius:15px;">
+                                        <table class="table table-hover">
+                                            <thead style="background-color: #c7deca;">                                        
+                                            <tr class="tmpTr">
+                                                <th scope="col" >No</td>
+                                                <th scope="col" >Name Visiting</th>
+                                                <th scope="col" >Supplier</th>
+                                                <th scope="col" >Phone</th>
+                                                <th scope="col" >Email</th>
+                                                <th scope="col" >Date / Time</th>
+                                                <th scope="col" >Name Attending</th>
+                                                <th scope="col" >Created By</th>
+                                                <th scope="col" >Modified By</th>
+                                                <th scope="col" >Last Updated</th>
+                                                <th scope="col" >Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tmpTr1">
+                                                    <td scope="row">1</th>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >Lorem ipsum</td>
+                                                    <td >
+                                                        <select id="selectbox2">
+                                                            <option value="">Select All</option>
+                                                            <option value="1">Lorem Ipsum</option>
+                                                            <option value="2">Lorem Ipsum</option>
+                                                            <option value="3">Lorem Ipsum</option>
+                                                            <option value="4">Lorem Ipsum</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-case_notes" role="tabpanel" aria-labelledby="nav-case_notes-tab">
+                        <div class="table_wrapper" style="margin-top: 20px; margin-bottom: 10px;">
+                            <div class="table-scroll">
+                                <table class="data-table">
+                                    <thead>
+                                      <tr class="tmpTr">
+                                        <th scope="col">Task ID</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Task </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="tmpTr">
+                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                        <td data-label="Description">Lorem Ipsum</td>
+                                        <td data-label="Task"> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum </td>
+                                      </tr>
+                                      <tr class="tmpTr active">
+                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                        <td data-label="Description">Lorem Ipsum</td>
+                                        <td data-label="Task"> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum </td>
+                                      </tr>
+                                      <tr class="tmpTr">
+                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                        <td data-label="Description">Lorem Ipsum</td>
+                                        <td data-label="Task"> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum </td>
+                                      </tr>
+                                      <tr class="tmpTr">
+                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                        <td data-label="Description">Lorem Ipsum</td>
+                                        <td data-label="Task"> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum </td>
+                                      </tr>
+                                      <tr class="tmpTr">
+                                        <td data-label="Task ID">Lorem Ipsum</td>
+                                        <td data-label="Description">Lorem Ipsum</td>
+                                        <td data-label="Task"> Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum  Lorem Ipsum </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <!-- end data table -->
+                        <!-- data table footer -->
+                        <div class="table-footer">
+                            <div class="show-page">Showing 0 to 0 of 0 entries</div>
+                            <div class="">
+                                <ul class="pagination">
+                                    <li class=""><a class="first" href="#"></a></li>
+                                    <li class=""><a class="prev" href="#"></a></li>
+                                    <li class="active"><span>1</span></li>
+                                    <li class=""><a class="" href="#">2</a></li>
+                                    <li class=""><a class="" href="#">3</a></li>
+                                    <li class=""><a class="" href="#">4</a></li>
+                                    <li class=""><a class="" href="#">5</a></li>
+                                    <li class=""><a class="next" href="#"></a></li>
+                                    <li class=""><a class="last" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end data table footer -->
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea id="editor"></textarea>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-case_documents">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="table_wrapper1" style="margin-top: 20px; margin-bottom: 10px;">
+                                        <div class="table-scroll">
+                                            <table class="data-table">
+                                                <thead>
+                                                  <tr class="tmpTr">
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Uploaded By</th>
+                                                    <th scope="col">Supplier</th>
+                                                    <th scope="col">File Name</th>
+                                                    <th scope="col">Caption</th>
+                                                    <th scope="col">File Type</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Mark Assessor</td>
+                                                    <td data-label="Task ID"></td>
+                                                    <td data-label="Task ID">abc1.png</td>
+                                                    <td data-label="Task ID">Vehicle Front Bumper</td>
+                                                    <td data-label="Task ID">png</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                    <!-- end data table -->
+                                    <!-- data table footer -->
+                                    <div class="table-footer">
+                                        <div class="show-page">Showing 0 to 0 of 0 entries</div>
+                                        <div class="">
+                                            <ul class="pagination">
+                                                <li class=""><a class="first" href="#"></a></li>
+                                                <li class=""><a class="prev" href="#"></a></li>
+                                                <li class="active"><span>1</span></li>
+                                                <li class=""><a class="" href="#">2</a></li>
+                                                <li class=""><a class="" href="#">3</a></li>
+                                                <li class=""><a class="" href="#">4</a></li>
+                                                <li class=""><a class="" href="#">5</a></li>
+                                                <li class=""><a class="next" href="#"></a></li>
+                                                <li class=""><a class="last" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end data table footer -->
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="container-fluid">
+                                        <div class="row" style="margin-top: 20px;">
+                                            <div class="col-sm-12">
+                                                <img src="./images/motor-example.png" style="width: 100%; height: 70%;" />
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <span class="normal-style">12.10.2020 12.45</span> &nbsp; &nbsp; &nbsp;
+                                                        <span class="normal-style">|  Mark Assessor</span> &nbsp; &nbsp; &nbsp;
+                                                        <span class="normal-style">| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        <span class="normal-style">|  abc1.png</span> &nbsp; &nbsp; &nbsp;
+                                                        <span class="normal-style">|  Vehicle Front Bumper</span> &nbsp; &nbsp; &nbsp;
+                                                        <span class="normal-style">|  Png</span>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-sm-12">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-reserves" role="tabpanel" aria-labelledby="nav-reserves-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="table_wrapper1" style="margin-top: 20px; margin-bottom: 10px;">
+                                        <div class="table-scroll">
+                                            <table class="data-table">
+                                                <thead>
+                                                  <tr class="tmpTr">
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Activity</th>
+                                                    <th scope="col">Reserve Amount</th>
+                                                    <th scope="col">Reserve Balance</th>
+                                                    <th scope="col">Items</th>
+                                                    <th scope="col">Created By</th>
+                                                    <th scope="col">System/User</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">Lodgement</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID">210,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                    <!-- end data table -->
+                                    <!-- data table footer -->
+                                    <div class="table-footer">
+                                        <div class="show-page">Showing 0 to 0 of 0 entries</div>
+                                        <div class="">
+                                            <ul class="pagination">
+                                                <li class=""><a class="first" href="#"></a></li>
+                                                <li class=""><a class="prev" href="#"></a></li>
+                                                <li class="active"><span>1</span></li>
+                                                <li class=""><a class="" href="#">2</a></li>
+                                                <li class=""><a class="" href="#">3</a></li>
+                                                <li class=""><a class="" href="#">4</a></li>
+                                                <li class=""><a class="" href="#">5</a></li>
+                                                <li class=""><a class="next" href="#"></a></li>
+                                                <li class=""><a class="last" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end data table footer -->
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="container-fluid">
+                                        <div class="row" style="margin-top: 20px;">
+                                            <div class="col-sm-12">
+                                                <div class="table_wrapper1" style="margin-top: 0px; margin-bottom: 10px;">
+                                                    <div class="table-scroll">
+                                                        <table class="data-table">
+                                                            <thead>
+                                                              <tr class="tmpTr">
+                                                                <th scope="col">Item</th>
+                                                                <th scope="col">Amount</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr class="tmpTr">
+                                                                <td data-label="Task ID">
+                                                                    <select id="selectbox2">
+                                                                        <option value="">Select All</option>
+                                                                        <option value="1">Lorem Ipsum</option>
+                                                                        <option value="2">Lorem Ipsum</option>
+                                                                        <option value="3">Lorem Ipsum</option>
+                                                                        <option value="4">Lorem Ipsum</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td data-label="Task ID">1,000</td>
+                                                              </tr>
+                                                              <tr class="tmpTr">
+                                                                <td data-label="Task ID">
+                                                                    <select id="selectbox2">
+                                                                        <option value="">Select All</option>
+                                                                        <option value="1">Lorem Ipsum</option>
+                                                                        <option value="2">Lorem Ipsum</option>
+                                                                        <option value="3">Lorem Ipsum</option>
+                                                                        <option value="4">Lorem Ipsum</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td data-label="Task ID">1,000</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-payment" role="tabpanel" aria-labelledby="nav-payment-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table_wrapper1" style="margin-top: 20px; margin-bottom: 10px;">
+                                        <div class="table-scroll">
+                                            <table class="data-table">
+                                                <thead>
+                                                  <tr class="tmpTr">
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Payment Number</th>
+                                                    <th scope="col">Payment Type</th>
+                                                    <th scope="col">Payment Category</th>
+                                                    <th scope="col">Payment Amount</th>
+                                                    <th scope="col">Items</th>
+                                                    <th scope="col">Created By</th>
+                                                    <th scope="col">System/User</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> cash </span><br/>
+                                                        <span class="normal-style">  </span><br/>
+                                                        <span class="normal-style">  </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> Bank </span><br/>
+                                                        <span class="normal-style"> 123 12121 </span><br/>
+                                                        <span class="normal-style"> Bendigo Bank </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> cash </span><br/>
+                                                        <span class="normal-style">  </span><br/>
+                                                        <span class="normal-style">  </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> Bank </span><br/>
+                                                        <span class="normal-style"> 123 12121 </span><br/>
+                                                        <span class="normal-style"> Bendigo Bank </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> cash </span><br/>
+                                                        <span class="normal-style">  </span><br/>
+                                                        <span class="normal-style">  </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> Bank </span><br/>
+                                                        <span class="normal-style"> 123 12121 </span><br/>
+                                                        <span class="normal-style"> Bendigo Bank </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">12.10.2020 12.45</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> cash </span><br/>
+                                                        <span class="normal-style">  </span><br/>
+                                                        <span class="normal-style">  </span><br/></td>
+                                                    <td data-label="Task ID">Settlement</td>
+                                                    <td data-label="Task ID">100,000.00</td>
+                                                    <td data-label="Task ID" style="text-align: left;">
+                                                        <span class="normal-style"> 1. Vehicle Damage </span><br/>
+                                                        <span class="normal-style"> 2. Road Damage </span><br/>
+                                                        <span class="normal-style"> 3. Accessories </span><br/>
+                                                    </td>
+                                                    <td data-label="Task ID">James Assessor</td>
+                                                    <td data-label="Task ID">System</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                    <!-- end data table -->
+                                    <!-- data table footer -->
+                                    <div class="table-footer">
+                                        <div class="show-page">Showing 0 to 0 of 0 entries</div>
+                                        <div class="">
+                                            <ul class="pagination">
+                                                <li class=""><a class="first" href="#"></a></li>
+                                                <li class=""><a class="prev" href="#"></a></li>
+                                                <li class="active"><span>1</span></li>
+                                                <li class=""><a class="" href="#">2</a></li>
+                                                <li class=""><a class="" href="#">3</a></li>
+                                                <li class=""><a class="" href="#">4</a></li>
+                                                <li class=""><a class="" href="#">5</a></li>
+                                                <li class=""><a class="next" href="#"></a></li>
+                                                <li class=""><a class="last" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end data table footer -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-related" role="tabpanel" aria-labelledby="nav-related-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table_wrapper1" style="margin-top: 20px; margin-bottom: 10px;">
+                                        <div class="table-scroll">
+                                            <table class="data-table">
+                                                <thead>
+                                                  <tr class="tmpTr">
+                                                    <th scope="col">Claim Number</th>
+                                                    <th scope="col">Policy Number</th>
+                                                    <th scope="col">Claim Type</th>
+                                                    <th scope="col">Incident Type</th>
+                                                    <th scope="col">Claim Status</th>
+                                                    <th scope="col">Reserve Balance</th>
+                                                    <th scope="col">Paid</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                  <tr class="tmpTr1">
+                                                    <td data-label="Task ID">111111111111</td>
+                                                    <td data-label="Task ID">12345</td>
+                                                    <td data-label="Task ID" style="text-align: left;">Vehicle Own Damage
+                                                    <td data-label="Task ID">Accident</td>
+                                                    <td data-label="Task ID">Settled</td>
+                                                    <td data-label="Task ID">0</td>
+                                                    <td data-label="Task ID">150,000.00</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                    <!-- end data table -->
+                                    <!-- data table footer -->
+                                    <div class="col-sm-4"  style="margin-bottom: 25px;">
+                                        <div class="show-page">
+                                            <input type="submit" value="Add New" class="search-btn">
+                                        </div>
+                                    </div>
+                                    <!-- end data table footer -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-policy" role="tabpanel" aria-labelledby="nav-policy-tab">
+                        <div class="container-fluid">
+                            <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                                <a href="./images/motor-example.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-1">
+                                <img src="./images/motor-example.png" class="img-fluid rounded">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12" style="background-color: rgba(128, 128, 128, 0.09);">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">System Id</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: 52550</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6"><span class="claim-title">Intermadiary</span></div>
+                                                <div class="col-md-6"><span class="claim-content">: DIRECT</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Created By</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: SYSTEM</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Product</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: YMPG</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6"><span class="claim-title">Intermediary ID</span></div>
+                                                <div class="col-md-6"><span class="claim-content">: </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Created Date</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: Aug20, 2020 12:53</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Quote No</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: SQMPG20035325</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6"><span class="claim-title">Annual Premium</span></div>
+                                                <div class="col-md-6"><span class="claim-content">:</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Updated By</span></div>
+                                                <div class="col-md-7"><span class="claim-content">:</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Policy No</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: DMPG20008538</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6"><span class="claim-title">Gross Premium</span></div>
+                                                <div class="col-md-6"><span class="claim-content">:</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Updated Time</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: Aug20, 2020 12:53</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Policy Peroid</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: Aug20, 2020 Aug 19 2021</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-6"><span class="claim-title">Communication Method</span></div>
+                                                <div class="col-md-6"><span class="claim-content">: </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">Payable Premium</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="row">
+                                                <div class="col-md-5"><span class="claim-title">GST</span></div>
+                                                <div class="col-md-7"><span class="claim-content">: </span></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row" style="margin-top: 20px; margin-bottom: 10px; padding-top: 10px; padding-bottom:10px; border: 1px; border-color:gray;">
+                                        <div class="col-md-12">
+                                            <div class="col-md4">
+                                                <input type="submit" value="YMPG" class="search-btn" style="border-radius: 5px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span> Risk </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Risk Code </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : PTP </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Selected Plan </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Adults </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> :  </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Children </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> :  </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Who </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Cover </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Region </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : </span>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 20px;">
+                                        <div class="col-md-4">
+                                            <span> Travellers </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span> Premium Details </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Payable Premium </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> :  </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <span class="normal-style"> Annual Premium </span>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <span class="normal-style"> : </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" >
+                <div class="col-sm-12" style="padding-left: 45px;">
+                    <div class="pull-left">
+                        <input type="submit" value="Cancel" class="search-btn">
+                    </div>
+                    <div class="pull-right">
+                        <input type="submit" value="Save" class="search-btn">
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <footer>
+            <p class="text-center poweredby">Powered by Yoors © 2020 </p>
+        </footer>
+    </div>
+</body>
+    <!-- jquery -->
+    <!-- jquery min -->
+    <!-- selectStyle jquery -->
+    <script src="js/selectStyle.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- jquery.ui.core.js -->
+    <script src="js/jquery.ui.core.js"></script>
+    <!-- jquery.ui.datepicker -->
+    <script src="js/jquery.ui.datepicker.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+
+      <!-- moment.min.js -->
+      <script src='js/moment.min.js'></script>
+      <!-- bootstrap-datetimepicker.min.js -->
+      <script src='js/bootstrap-datetimepicker.min.js'></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#editor',
+            menubar: false
+        });
+    </script>
+    <script>
+        $(function() {
+            
+            $( "#datepicker" ).datepicker();
+            $( "#dobdatepicker" ).datepicker();
+            $( "#format" ).change(function() {
+                $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+            });
+        });
+    </script>
+    <style>
+        select{
+            height: 10px;
+        }
+
+        .select{
+            /* width: 150px; */
+            height: 20px;
+            line-height: 20px;
+        }
+    </style>
+
+
+    <script id="rendered-js" >
+        if (/Mobi/.test(navigator.userAgent)) {
+          // if mobile device, use native pickers
+          $(".date input").attr("type", "date");
+          $(".time input").attr("type", "time");
+        } else {
+          // if desktop device, use DateTimePicker
+          $("#datepicker").datetimepicker({
+            useCurrent: true,
+            format: "L",
+            showTodayButton: true,
+            icons: {
+              next: "fa fa-chevron-right",
+              previous: "fa fa-chevron-left",
+              today: 'todayText' } });
+        
+        
+          $("#timepicker").datetimepicker({
+            format: "LT",
+            icons: {
+              up: "fa fa-chevron-up",
+              down: "fa fa-chevron-down" } });
+        
+        
+        }
+        </script>
+</html>
+
+
+

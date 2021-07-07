@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoors</title>
+    <!-- google font API -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap min css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- jquery UI css -->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- custom style css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/self_style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+</head>
+<body class="earth-bg">
+    <div class="page">
+        <!-- header -->
+        <header class="header d-flex px-3 align-items-center">
+            <div class="logo"><a href="login.html"><img src="images/logo.png" alt="logo"></a></div>
+            <div class="ml-auto">
+                <ul class="right-menu list-unstyled">
+                    <li class="dropdown"></li>
+                    <li class="move"></li>
+                    <li class="logout"></li>
+                    <li class="hamberger"></li>
+                </ul>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <div class="page-main">
+            <!-- app sidebar -->
+            <div class="app-sidebar">
+                <div class="up-header d-flex justify-content-between align-items-center">
+                    <h3>Underwriter Portal</h3>
+                    <button class="side-menu-toggle">toggle</button>
+                </div>
+                <!-- side nagigation -->
+                <div class="side-menu">
+                    <div class="scroll-height">
+                        <ul id="sideNavigation" class="navigation">
+                            <li><a href="index.html" class="mytasks">My Tasks</a></li>
+                            <li><a href="customer.html" class="customer">Customer</a></li>
+                            <li><a href="" class="quotesBusiness">My Policies</a>
+                                <ul>
+                                    <li><a href="transationsearch.html" class="transactionSearch">Transaction Search</a></li>
+                                    <li><a href="newquote.html" class="newQuote">New Quote</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="policyServicing">My Claims</a>
+                                <ul style="display: block;">
+                                    <li><a href="#" class="lodgement">Lodgement</a></li>
+                                    <li><a href="claim_search.html" class="claimSearch active">Claim Search</a></li>
+                                    <li><a href="#" class="myReminders">My Reminders</a></li>
+                                    <li><a href="#" class="manageProviders">Manage Providers</a></li>
+                                    <li><a href="#" class="manageRecoveries">Manage Recoveries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="cashModule">Cash Module</a></li>
+                            <li><a href="" class="accounts">Accounts</a></li>
+                            <li><a href="" class="managementReports">Management Reports</a>
+                                <ul>
+                                    <li><a href="available_reports.html" class="availableReport">Available Report</a></li>
+                                    <li><a href="report_que.html" class="reportQueue">Report Queue</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="administration">Administration</a>
+                                <ul>
+                                    <li><a href="user_management.html" class="userManagement">User Management</a></li>
+                                    <li><a href="product_rules.html" class="productRules">Product Rules</a></li>
+                                    <li><a href="intermediary_management.html" class="intermediaryManagement">Intermediary Management</a></li>
+                                    <li><a href="ticker_management.html" class="tickerManagement">Ticker Management</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ens side navigation -->
+            </div>
+            <!-- end app sidebar -->
+            <div class="app-content">
+                <!-- breadcrumb menu -->
+                <div class="page_header">
+                    <ul class="breadcrumb">
+                        <li class="item">Home</li>
+                        <li class="item">My Claims</li>
+                        <li class="item active">Claim Search</li>
+                    </ul>
+                </div>
+                <!-- end breadcrumb menu -->
+                <!-- search form -->
+                <div class="form-wrapper">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Claim Number</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Policy Number</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Vehicle No</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Date of Loss</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Insured</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">PostCode</div>
+                           <div class="form-input">
+                               <input type="text">
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Portfolio</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option disabled value="country">Select All</option>
+                                    <option value="India">Lorem Ipsum</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Assigned</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Select All</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Priority</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value=""></option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Product</div>
+                            <div class="selectElement">
+                                <select id="selectbox2">
+                                    <option value="">Select All</option>
+                                    <option value="1">Lorem Ipsum</option>
+                                    <option value="2">Lorem Ipsum</option>
+                                    <option value="3">Lorem Ipsum</option>
+                                    <option value="4">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Role</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option value="country">Select All</option>
+                                    <option value="India">Lorem Ipsum</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="selectBoxTitle">Case Manager</div>
+                            <div class="selectElement">
+                                <select id="selectbox1">
+                                    <option value="country">Select All</option>
+                                    <option value="India">Lorem Ipsum</option>
+                                    <option value="usa">Lorem Ipsum</option>
+                                    <option value="australia">Lorem Ipsum</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="float-right">
+                                <input type="submit" value="Search" class="search-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+            <!-- data table -->
+            <div class="table_wrapper">
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Claim No</th>
+                            <th scope="col">Policy No</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Policy No</th>
+                            <th scope="col">Insured</th>
+                            <th scope="col">Date of Loss</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr class="active">
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-label="Task ID">Lorem Ipsum</td>
+                            <td data-label="Description">Lorem Ipsum</td>
+                            <td data-label="Task">Lorem Ipsum</td>
+                            <td data-label="Branch">Lorem Ipsum</td>
+                            <td data-label="Intermnedia">Lorem Ipsum</td>
+                            <td data-label="Customer Customer ID">Lorem Ipsum</td>
+                            <td data-label="Portfolio Product">
+                                <span>Lorem IpsumLorem Ipsum</span>
+                                <a class="pull-right edit-icon" href="claim_details.html"><span class="fa fa-edit"></span></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <!-- end data table -->
+            <!-- data table footer -->
+            <div class="table-footer">
+                <div class="show-page">Showing 0 to 0 of 0 entries</div>
+                <div class="">
+                    <ul class="pagination">
+                        <li class=""><a class="first" href="#"></a></li>
+                        <li class=""><a class="prev" href="#"></a></li>
+                        <li class="active"><span>1</span></li>
+                        <li class=""><a class="" href="#">2</a></li>
+                        <li class=""><a class="" href="#">3</a></li>
+                        <li class=""><a class="" href="#">4</a></li>
+                        <li class=""><a class="" href="#">5</a></li>
+                        <li class=""><a class="next" href="#"></a></li>
+                        <li class=""><a class="last" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end data table footer -->
+           </div>
+        </div>
+        <!-- end main -->
+        <!-- footer -->
+        <footer>
+            <p class="text-center poweredby">Powered by Yoors © 2020 </p>
+        </footer>
+        <!-- end footer -->
+    </div>
+</body>
+      <!-- jquery -->
+      <!-- jquery min -->
+      <script src="js/jquery.min.js"></script>
+      <!-- bootstrap min -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- selectStyle jquery -->
+      <script src="js/selectStyle.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <!-- jquery.ui.core.js -->
+      <script src="js/jquery.ui.core.js"></script>
+      <!-- jquery.ui.datepicker -->
+      <script src="js/jquery.ui.datepicker.js"></script>
+      <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+        $( "#format" ).change(function() {
+          $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+        });
+      });
+      </script>
+    </html>
